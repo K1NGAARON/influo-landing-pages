@@ -5,6 +5,8 @@
     --primary: #28a2f8;
     --white: #fff;
     --light-grey: #f8fcfe;
+    --yellow: #fcb84a;
+    --blue: #33aeb7;
     --black: #111320;
     --boxShadow: 0px 3px 6px #00000029;
     --borderRadius: 26px;
@@ -59,6 +61,22 @@ li {
     font-size: 20px;
 }
 
+ul,
+ol {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+    list-style: none;
+}
+
+li:before {
+    content: "\f00c"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-right: 5px;
+}
+
 .bold {
     font-weight: 700;
 }
@@ -108,6 +126,11 @@ img {
 
 .section.black {
     background-color: var(--black);
+}
+
+.section.blue {
+    color: var(--white);
+    background-color: var(--blue);
 }
 
 .section.grey,
