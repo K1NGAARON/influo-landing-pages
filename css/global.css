@@ -1,15 +1,15 @@
-@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
-@import url("https://use.typekit.net/zdv0evm.css");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
 
 :root {
-    --primary: #28a2f8;
+    --primary: #009aa6;
     --white: #fff;
     --light-grey: #f8fcfe;
     --yellow: #fcb84a;
-    --blue: #33aeb7;
-    --black: #111320;
+    --blue: #009aa6;
+    --black: #00072E;
     --boxShadow: 0px 3px 6px #00000029;
     --borderRadius: 26px;
+    --borderRadiusBtn: 100px;
     --overlay: var(--black);
     --overlayVertical: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 24%, rgba(0,0,0,0) 70%);
     --transition: all .25s ease-in-out;
@@ -21,14 +21,18 @@ html {
 
 * {
     box-sizing: border-box;
-    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 400;
     margin: 0;
     padding: 0;
     line-height: 1.4;
 }
 
-h1,
+h1 {
+    font-weight: 800;
+}
+
+
 h2,
 h3 {
     font-weight: 700;
@@ -125,6 +129,7 @@ img {
 }
 
 .section.black {
+    color: var(--white);
     background-color: var(--black);
 }
 
@@ -181,7 +186,7 @@ img {
 }
 
 .btn {
-    font-family: "termina", sans-serif;
+    font-family: 'Nunito', sans-serif;
     text-transform: uppercase;
     width: fit-content;
     font-weight: 700;
@@ -191,7 +196,7 @@ img {
     color: var(--white);
     background-color: var(--primary);
     border: 1px solid var(--primary);
-    border-radius: 3px;
+    border-radius: var(--borderRadiusBtn);
     padding: 10px 15px;
     transition: var(--transition); 
 }

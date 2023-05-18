@@ -18,7 +18,7 @@
 .section .form-wrapper input {
     background-color: var(--white);
     border: none;
-    border-radius: 6px;
+    border-radius: var(--borderRadiusBtn);
 }
 
 .section .form-wrapper .btn {
@@ -28,4 +28,22 @@
 .section .form-wrapper .small {
     font-size: 14px;
     text-align: center;
+}
+
+.social-proof .social-proof-wrapper .item {
+    gap: 40px;
+}
+
+.social-proof-wrapper img {
+    width: 75px;
+    border-radius: 50%;
+}
+
+.social-proof-wrapper .item-col {
+    display: flex;
+    gap: 20px;
+}
+
+.social-proof-wrapper .item .item-col:nth-child(2) {
+    margin-top: auto;
 }
