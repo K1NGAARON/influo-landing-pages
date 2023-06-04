@@ -62,7 +62,7 @@ a {
 p,
 a,
 li {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 ul,
@@ -283,7 +283,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin: 0;
+    margin: 20px 0;
 }
 
 .form-wrapper input,
@@ -301,6 +301,39 @@ img {
     outline: none;
     font-size: 16px;
     transition: border-bottom 200ms ease;
+}
+
+.section .form-wrapper input.hs-button {
+    background-color: var(--primary);
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: var(--transition);
+    margin-top: 20px;
+}
+
+.section .form-wrapper input.hs-button:hover {
+    cursor: pointer;
+    transition: var(--transition);
+    transform: scale(1.05);
+}
+
+.form-wrapper label span {
+    font-weight: 700;
+    margin: 20px 0 10px 0;
+}
+
+.form-wrapper .hs-error-msg {
+    color: red;
+    font-size: 14px;
+}
+
+.form-wrapper .hs-error-msgs li::before {
+    content: '';
+}
+
+.form-wrapper .input {
+    margin-top: 10px;
 }
 
 .form-wrapper input::placeholder {
