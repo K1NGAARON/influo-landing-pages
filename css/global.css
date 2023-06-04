@@ -126,6 +126,7 @@ img {
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin: 40px auto;
 }
 
 .section.full-height {
@@ -153,7 +154,7 @@ img {
 
 .section .row {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1200px;
 
     display: flex;
     flex-flow: row wrap;

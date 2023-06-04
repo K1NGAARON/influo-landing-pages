@@ -4,6 +4,7 @@
     position: absolute;
     z-index: 99;
     transition: background-color 200ms linear;
+    margin: 0;
 }
 
 .header.active {
@@ -116,6 +117,7 @@
     min-height: unset;
     color: var(--white);
     background-color: var(--primary);
+    margin: 0 auto;
 }
 
 .footer .row {
